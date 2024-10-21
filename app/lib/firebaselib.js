@@ -5,11 +5,11 @@ import { getStorage } from 'firebase/storage'; // Import Firebase Storage
 
 const firebaseConfig = {
     apiKey: "AIzaSyCdLJJ-UMStJ6hQ33RbBbJ9Msrxyx7iJeI",
-    authDomain: process.env.NEXT_PUBLIC_AuthDomain,
-    projectId: process.env.NEXT_PUBLIC_Project_Id ,
-    storageBucket:  process.env.NEXT_PUBLIC_Storage_BUcket,
-    messagingSenderId:  process.env.NEXT_PUBLIC_Messaging_Sender_ID,
-    appId:  process.env.NEXT_PUBLIC_APP_Id
+    authDomain: "admin-dashboard-b87b4.firebaseapp.com",
+    projectId: "admin-dashboard-b87b4" ,
+    storageBucket:  "admin-dashboard-b87b4.appspot.com",
+    messagingSenderId:  "552184790838",
+    appId:  "1:552184790838:web:23632a7dad1c76b4cb3d97"
 };
 
 const app = initializeApp(firebaseConfig);
