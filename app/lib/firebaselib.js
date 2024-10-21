@@ -4,7 +4,7 @@ import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage'; // Import Firebase Storage
 
 const firebaseConfig = {
-    apiKey: process.env.NEXT_PUBLIC_Api_Key,
+    apiKey: "AIzaSyCdLJJ-UMStJ6hQ33RbBbJ9Msrxyx7iJeI",
     authDomain: process.env.NEXT_PUBLIC_AuthDomain,
     projectId: process.env.NEXT_PUBLIC_Project_Id ,
     storageBucket:  process.env.NEXT_PUBLIC_Storage_BUcket,
