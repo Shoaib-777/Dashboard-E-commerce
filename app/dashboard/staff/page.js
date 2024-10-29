@@ -38,7 +38,7 @@ const Staff = async ({ searchParams }) => {
           <thead>
             <tr className="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
               <th className="py-3  text-center">S.No</th>
-              <th className="py-3 px-3 text-left">Profile</th>
+              <th className="py-3 px-3 text-center">Profile</th>
               <th className="py-3 px-3 text-left">E-mail</th>
               <th className="py-3 px-3 text-left">Phone</th>
               <th className="py-3 px-3 text-center">User Role</th>
@@ -52,9 +52,9 @@ const Staff = async ({ searchParams }) => {
                 <tr key={user.id} className="border-b border-gray-200 hover:bg-gray-100">
                   <td className="py-3 text-center whitespace-nowrap">{(page - 1) * pageSize + index + 1}</td>
                   <td className="py-3 px-3 text-left">
-                    <div className="flex items-center space-x-3">
-                      <img src={user.profile || "/Images/no-user.jpg"} alt={user.username} className="w-10 h-10 rounded-full object-cover" />
-                      <span>{user.username}</span>
+                  <div className="flex flex-col">
+                      <img src={user.profile || "/Images/no-user.jpg"} alt={user.username} className="w-10 h-10 rounded-full object-cover mx-auto" />
+                      <h3 className="text-nowrap text-center">{user.username}</h3>
                     </div>
                   </td>
                   <td className="py-3 px-3 text-left">{user.email}</td>
