@@ -25,7 +25,7 @@ export const POST = async (req) => {
             path: '/', // make cookie available across the site
         });
 
-        return NextResponse.json({ message: "Email updated successfully", userLogged: email });
+        return NextResponse.json({ message: "User Login Sucessfully", userLogged: email });
     }
-    return NextResponse.json({ message: "Email update failed" }, { status: 400 });
+    return NextResponse.json({ message: "User Login Failed" }, { status: 400 });
 };
