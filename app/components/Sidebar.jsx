@@ -81,6 +81,7 @@ const Sidebar = () => {
     try {
       await signOut(auth);
       Cookies.remove("loggedIn");
+      const res = await axios.delete('/api/userlogged')
       // Sign-out successful
       console.log("User signed out");
       router.push('/login')

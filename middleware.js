@@ -30,5 +30,5 @@ export function middleware(request) {
 
 // Specify the routes where the middleware should apply
 export const config = {
-  matcher: ['/dashboard', '/login'], // Protect these routes
+  matcher: ['/dashboard/:path*', '/login'], // Protect these routes
 };

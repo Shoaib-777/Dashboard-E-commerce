@@ -11,6 +11,14 @@ export const GET = async () => {
     return NextResponse.json({ userLogged: storedEmail });
 };
 
+
+export const DELETE = async()=>{
+    const cookieStore = cookies();
+    cookieStore.delete('userEmail'); // Delete the 'userEmail' cookie
+
+    return NextResponse.json({ userLoggedOut: true });
+}
+
 export const POST = async (req) => {
     const { email } = await req.json(); // Extract email from the request body
     if (email) {
